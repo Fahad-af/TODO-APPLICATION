@@ -1,7 +1,6 @@
 import React,{ useState} from 'react'
 
 import { Data } from './../../Data/DATA';
-
 import Todos from './../Todos_Component/Todos';
 import Input from '../Input_Component/Input';
 

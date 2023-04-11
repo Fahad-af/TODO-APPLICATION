@@ -8,8 +8,8 @@ const Todos = (props) => {
          {
             props.data.map((todo,index)=>{
                   console.log(todo)
-                  const {work,des}=todo
-                  return <Todo work={work} des={des} key={index} />
+                  const {work,des,date}=todo
+                  return <Todo work={work} des={des} key={index} time={date} />
             })
          }
     </div>

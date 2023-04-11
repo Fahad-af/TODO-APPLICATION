@@ -1,11 +1,13 @@
 import React from 'react'
+import todo from'./Todo.css'
 
 const Todo = (props) => {
  
   return (
-    <div>
-          <h3>{props.work}</h3>
-          <h4>{props.des}</h4>
+    <div className='m-3 p-2 bg-warning bg-gradient rounded text-dark' >
+          <h3>Work:{props.work}</h3>
+          <h4>What are you doing:{props.des}</h4>
+          <h4> Time:{props.time}</h4>
     </div>
   )
 }
