@@ -13,7 +13,7 @@ function Home() {
      
   return (
     <div>
-        
+        <center> <h2> Daily Routing App</h2></center>
         <Input data={data1} />
         < Todos data={data} />
     </div>
