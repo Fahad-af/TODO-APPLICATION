@@ -7,11 +7,16 @@ import Input from '../Input_Component/Input';
 
 function Home() {
       const [data, setdata]=useState(Data)
+
+      const data1=(userinfo)=>{
+          setdata([...data,userinfo])
+      }
      
   return (
     <div>
+        
+        <Input data={data1} />
         < Todos data={data} />
-        <Input />
     </div>
   )
 }
