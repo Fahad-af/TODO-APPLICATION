@@ -6,10 +6,10 @@ const Todos = (props) => {
   return (
     <div>
          {
-            props.data.map((todo)=>{
+            props.data.map((todo,index)=>{
                   console.log(todo)
                   const {work,des}=todo
-                  return <Todo work={work} des={des}/>
+                  return <Todo work={work} des={des} key={index} />
             })
          }
     </div>
